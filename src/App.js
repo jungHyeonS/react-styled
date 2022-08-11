@@ -23,13 +23,38 @@ const Circle = styled(Box)`
   border-radius: 50px;
 `
 
+const Btn = styled.button`
+  color: white;
+  background-color: tomato;
+  border: 0;
+  border-radius: 15px;
+`
+
+//해당 컴포넌트에 속성을 지정
+const Input = styled.input.attrs({require:true})`
+  background-color: tomato;
+`
+
+
 function App() {
   return (
     <Father>
-      <Box bgColor="teal">
-        <Text>Hello</Text>
-      </Box>
-      <Circle bgColor="tomato"/>
+      {/* <Box bgColor="teal"> */}
+        {/* <Text>Hello</Text> */}
+      {/* </Box> */}
+      {/* <Circle bgColor="tomato"/> */}
+
+      {/* <Btn>Login</Btn>
+
+      as - 컴포넌트를 지정한 html 로 바꾼다
+      <Btn as="a" href="/">Login</Btn> */}
+
+      <Input/>
+      <Input/>
+      <Input/>
+      <Input/>
+      <Input/>
+      <Input/>
     </Father>
   );
 }
